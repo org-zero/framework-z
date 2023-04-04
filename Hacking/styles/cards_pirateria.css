@@ -1,0 +1,33 @@
+.grid_1 {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 2fr 2fr;
+    width: 98%;
+    margin: 2vh;
+  }
+  .main_1 {
+    background: #fcc;
+    height: 100%;
+  }
+  .side_1 {
+    background: #fea;
+  }
+  .main_1,
+  .side_1 {
+    padding: 2%;
+  }
+  
+  @media(max-width: 400px){
+    .grid_1 {
+      grid-template-columns: 1fr;
+      margin-left: 2px;
+    }
+  }
+
+
+
+.main_1, .side_1 {
+	height: 100%;
+	background: linear-gradient(0deg, #000, #272727);
+    color: white;
+}

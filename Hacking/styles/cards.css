@@ -1,0 +1,122 @@
+.animate-charcter
+{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #252525 0%,
+    #68ce30 29%,
+    #9cea3d 67%,
+    #44ff00 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 27px;
+      margin-left: -21px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .animate-charcter {
+      margin-left: 27px;
+     }
+   }
+
+
+
+
+.card-container {
+	align-items: start;
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(auto-fit, 300px);
+	justify-content: center;
+}
+
+.card {
+    border: solid 2px rgb(26, 26, 26);
+    text-align: center;
+    background-color: #252525;
+    color: #ffffff;
+}
+.imagenes_isos {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*botones de cartas isos*/
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #181818;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+
+
+  }
+
+
+  .isos {
+    color: white;
+    margin-left: 9vh;
+    background-color: #252525;
+    width: 91.6%;
+    text-align: left;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .isos {
+    width: 96%;
+    margin-left: 5px;
+    }
+    .card, .card-container {
+
+      width: 45vh;
+      margin-left: -6px;
+
+    }
+   }

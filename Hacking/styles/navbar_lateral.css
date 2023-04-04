@@ -1,0 +1,57 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.873), rgba(0, 0, 0, 0.883)) fixed, url(https://media.tenor.com/k3BNIDqMr6QAAAAC/hacking-hacker.gif) fixed;
+    background-size: contain;
+    background-position: center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #a1f44e;
+    display: block;
+    transition: 0.3s;
+    height: 4vh;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .navbar_lateral_boton {
+    position: fixed;
+    right:  0;
+    bottom: 0;
+    width: 10%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    margin: 10px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url();
+    background-size: cover;
+  }
